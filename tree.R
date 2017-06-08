@@ -23,8 +23,10 @@ master=data.frame(f1[,1],f1[,6],level_no)-
  	k=0
  	for(i in seq(1,rows,1)){
 		if(present(master[i,2],parent_list) || (chk_null(parent_list) && master[i,2]=" "){
- 			curr_list[k]=master[i,2] -			count=count+1
- 			k=k+1 			master[i,3]=level
+ 			curr_list[k]=master[i,2]
+			count=count+1
+ 			k=k+1 			
+			master[i,3]=level
 	 	}
 	level=level+1
  	parent_list=curr_list
