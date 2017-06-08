@@ -18,7 +18,7 @@ master=data.frame(f1[,1],f1[,6],level_no)-
  parent_list=rep(0,nrow(f1))
  level=0
  count=0
- k=0
+ 
  while(count<=rows){
  	k=0
  	for(i in seq(1,rows,1)){
